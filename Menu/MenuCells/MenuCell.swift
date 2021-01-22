@@ -19,10 +19,15 @@ class MenuCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         self.image.image = nil
+        self.labelName.text = nil
+        self.labelPrice.text = nil
     }
     
     func setup(product:Product){
         self.image.image = product.image
+        self.labelName.text = product.name
+        self.labelPrice.text = "\(product.price)"
+        
     }
 
 }

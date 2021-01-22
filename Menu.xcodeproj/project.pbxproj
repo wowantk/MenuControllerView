@@ -16,6 +16,8 @@
 		FA6EBF9525B7D0B500264895 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBF9325B7D0B500264895 /* MenuCell.swift */; };
 		FA6EBF9625B7D0B500264895 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6EBF9425B7D0B500264895 /* MenuCell.xib */; };
 		FA6EBF9A25B7D25000264895 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBF9925B7D25000264895 /* Menu.swift */; };
+		FAB6963D25BA5D6D00B8172A /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6963B25BA5D6D00B8172A /* GroupCell.swift */; };
+		FAB6963E25BA5D6D00B8172A /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB6963C25BA5D6D00B8172A /* GroupCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FA6EBF9325B7D0B500264895 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		FA6EBF9425B7D0B500264895 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		FA6EBF9925B7D25000264895 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FAB6963B25BA5D6D00B8172A /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		FAB6963C25BA5D6D00B8172A /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		FA6EBF7725B7CF5A00264895 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				FAB6963A25BA5D4D00B8172A /* GroupCell */,
 				FA6EBF9225B7D07000264895 /* MenuCells */,
 				FA6EBF7825B7CF5A00264895 /* AppDelegate.swift */,
 				FA6EBF7A25B7CF5A00264895 /* SceneDelegate.swift */,
@@ -82,6 +87,15 @@
 				FA6EBF9425B7D0B500264895 /* MenuCell.xib */,
 			);
 			path = MenuCells;
+			sourceTree = "<group>";
+		};
+		FAB6963A25BA5D4D00B8172A /* GroupCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6963B25BA5D6D00B8172A /* GroupCell.swift */,
+				FAB6963C25BA5D6D00B8172A /* GroupCell.xib */,
+			);
+			path = GroupCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +158,7 @@
 				FA6EBF8525B7CF5A00264895 /* LaunchScreen.storyboard in Resources */,
 				FA6EBF8225B7CF5A00264895 /* Assets.xcassets in Resources */,
 				FA6EBF9625B7D0B500264895 /* MenuCell.xib in Resources */,
+				FAB6963E25BA5D6D00B8172A /* GroupCell.xib in Resources */,
 				FA6EBF8025B7CF5A00264895 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +173,7 @@
 				FA6EBF7925B7CF5A00264895 /* AppDelegate.swift in Sources */,
 				FA6EBF7B25B7CF5A00264895 /* SceneDelegate.swift in Sources */,
 				FA6EBF9525B7D0B500264895 /* MenuCell.swift in Sources */,
+				FAB6963D25BA5D6D00B8172A /* GroupCell.swift in Sources */,
 				FA6EBF8E25B7CFF300264895 /* MenuViewController.swift in Sources */,
 				FA6EBF9A25B7D25000264895 /* Menu.swift in Sources */,
 			);

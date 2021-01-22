@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BUp-CK-bP5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="h8R-ul-8Lh">
                                     <size key="itemSize" width="128" height="128"/>
@@ -37,23 +37,50 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ilX-PC-Cue">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="34d-rM-TaH"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="507-Cx-85K">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iug-9e-Thb">
+                                        <rect key="frame" x="0.0" y="-39" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4L4-ep-DUy">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BUp-CK-bP5" secondAttribute="bottom" id="3t3-dQ-JLJ"/>
+                            <constraint firstItem="BUp-CK-bP5" firstAttribute="top" secondItem="ilX-PC-Cue" secondAttribute="bottom" id="AAQ-Zr-Sdw"/>
                             <constraint firstItem="BUp-CK-bP5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eji-jb-tNL"/>
+                            <constraint firstItem="ilX-PC-Cue" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="M1F-it-uwY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BUp-CK-bP5" secondAttribute="trailing" id="Prj-BV-xwK"/>
-                            <constraint firstItem="BUp-CK-bP5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UTg-Vg-qHD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ilX-PC-Cue" secondAttribute="trailing" id="mFa-iI-DS6"/>
+                            <constraint firstItem="ilX-PC-Cue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uRG-SI-qAY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="BUp-CK-bP5" id="gjw-Yi-o6U"/>
+                        <outlet property="groupsMenu" destination="ilX-PC-Cue" id="J0O-Wu-9lf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="76"/>
+            <point key="canvasLocation" x="-526" y="-52"/>
         </scene>
     </scenes>
     <resources>
